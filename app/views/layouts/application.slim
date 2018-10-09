@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Minion Toys
+    == csrf_meta_tags
+    meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+
+    == stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    == javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body
+    nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+      .container
+        a class="navbar-brand js-scroll-trigger" href=root_path Minion Toys
+
+    == yield
+
+    footer class="py-3 bg-light"
+      .container
+        p class="m-0 text-muted"
+          'Copyright © Minion Toys #{Time.now.year}
