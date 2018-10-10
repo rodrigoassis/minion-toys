@@ -1,0 +1,28 @@
+div class="container mt-4"
+  .card
+    .card-body
+      h2.text-center Veja como é super rápido
+
+      == form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        == devise_error_messages!
+
+        .form-group
+          == f.label :name
+          == f.text_field :name, autofocus: true, class: 'form-control'
+
+        .form-group
+          == f.label :email
+          == f.email_field :email, autocomplete: "email", class: 'form-control'
+
+        .form-group
+          == f.label :password
+          == f.password_field :password, autocomplete: "off", class: 'form-control'
+          small class="form-text text-muted"
+            'Mínimo de #{@minimum_password_length} caracteres
+
+        .form-group
+          == f.label :password_confirmation
+          == f.password_field :password_confirmation, autocomplete: "off", class: 'form-control'
+
+        .actions
+          == f.submit "Cadastrar", class: "btn btn-primary"
