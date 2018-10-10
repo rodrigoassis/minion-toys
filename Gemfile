@@ -26,6 +26,8 @@ gem 'bootstrap', '4.1.3'
 
 gem 'devise', '4.4.1'
 
+gem 'rails_admin', '1.2.0'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
