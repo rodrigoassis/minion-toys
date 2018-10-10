@@ -45,6 +45,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '3.8.0'
   gem 'rails-controller-testing', '1.0.2'
+  gem 'shoulda-matchers', '3.1.2'
 end
 
 group :development do

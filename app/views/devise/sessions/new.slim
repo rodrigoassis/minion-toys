@@ -1,0 +1,18 @@
+div class="container mt-4"
+  .card
+    .card-body
+      h2.text-center Acesse sua conta
+
+      == form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        == devise_error_messages!
+
+        .form-group
+          == f.label :email
+          == f.email_field :email, autocomplete: "email", class: 'form-control'
+
+        .form-group
+          == f.label :password
+          == f.password_field :password, autocomplete: "off", class: 'form-control'
+
+        .actions
+          == f.submit "Entrar", class: "btn btn-primary"
