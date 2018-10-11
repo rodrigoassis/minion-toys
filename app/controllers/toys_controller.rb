@@ -6,5 +6,6 @@ class ToysController < ApplicationController
 
   def show
     @toy = Toy.find_by_url_name(params[:url_name])
+    @order = Order.new
   end
 end

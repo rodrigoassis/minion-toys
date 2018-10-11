@@ -1,0 +1,22 @@
+<h3>Recebemos um novo pedido</h3>
+<p>Seguem os detalhes abaixo:</p>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Usuário</th>
+      <th scope="col">Email</th>
+      <th scope="col">Boneco</th>
+      <th scope="col">Quantidade</th>
+      <th scope="col">Preço Unitário</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @order.user.name %></td>
+      <td><%= @order.user.email %></td>
+      <td><%= @order.toy.name %></td>
+      <td><%= @order.quantity %></td>
+      <td><%= number_to_currency(@order.unit_price, unit: 'R$') %></td>
+    </tr>
+  </tbody>
+</table>
