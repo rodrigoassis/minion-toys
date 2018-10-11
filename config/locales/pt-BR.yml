@@ -42,11 +42,11 @@ pt-BR:
     models:
       user: 'Usuário'
     attributes:
-      attributes:
-        user:
-          email: 'Email'
-          name: 'Nome'
-          password: Senha
+      user:
+        email: 'Email'
+        name: 'Nome'
+        password: Senha
+        password_confirmation: Confirmação da senha
     errors:
       messages:
         record_invalid: 'inválido'
