@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hkoys9jbz
+  api_key: '922239833582656'
+  api_secret: 7IiId25LVyfzhRiUo4RHGmX0gm8
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hkoys9jbz
+  api_key: '922239833582656'
+  api_secret: 7IiId25LVyfzhRiUo4RHGmX0gm8
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hkoys9jbz
+  api_key: '922239833582656'
+  api_secret: 7IiId25LVyfzhRiUo4RHGmX0gm8
+  enhance_image_tag: true
+  static_image_support: false
