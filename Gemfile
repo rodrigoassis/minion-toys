@@ -29,6 +29,7 @@ gem 'devise', '4.4.1'
 gem 'rails_admin', '1.2.0'
 gem 'carrierwave', '1.2.2'
 gem 'cloudinary', '1.9.1'
+gem 'sendgrid-ruby', '5.2.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
