@@ -5,3 +5,16 @@ div class="jumbotron bg-warning jumbotron-fluid"
       'Reserve já os seus
       del malvados
       '&nbspbrinquedos favoritos!
+
+.container
+  .row
+    - @toys.each do |toy|
+      .col-sm-4
+        .card.mt-4.mb-4
+          == image_tag(toy.photo.url, alt: toy.name, class: 'card-img-top', height: 249)
+          hr
+          .card-body
+            h5.card-title = toy.name
+            p.card-text.text-truncate = toy.description
+            p.card-text.font-weight-bold = number_to_currency(toy.price, unit: 'R$')
+            = link_to 'Reserve agora', toy_path(toy.url_name), class: 'btn btn-primary btn-block'

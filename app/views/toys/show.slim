@@ -1,0 +1,15 @@
+.container
+  .row.mt-4.mb-4
+    .col-sm-6
+      == image_tag(@toy.photo.url, alt: @toy.name, width: '100%')
+    .col-sm-6
+      h2 = @toy.name
+      p.font-weight-bold = number_to_currency(@toy.price, unit: 'R$')
+      = link_to 'Reserve agora', toy_path(@toy.url_name), class: 'btn btn-primary btn-block'
+
+  .row
+    .col
+      h3 Descrição do Produto
+  .row
+    .col
+      p = @toy.description
